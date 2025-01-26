@@ -283,6 +283,7 @@ export class RestClientV5 extends BaseRestClient {
   getServerTime(): Promise<
     APIResponseV3WithTime<{ timeSecond: string; timeNano: string }>
   > {
+    console.log('this.is.servertime');
     return this.get('/v5/market/time');
   }
 
